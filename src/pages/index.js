@@ -18,10 +18,6 @@ export default function Home() {
         );
       });
     }
-    render();
-    {
-      return <div> hello </div>;
-    }
   }, []);
 
   return (
