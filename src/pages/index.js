@@ -82,12 +82,17 @@ export default function Home() {
   };
 
   const validateInput = (min, max, amount) => {
+    const pattern = /[a-zA-Z]/i;
+    isMinContainStr = pattern.test(min);
+    isMaxContainStr = pattern.test(min);
+    isAmountContainStr = pattern.test(min);
+
     min = parseInt(min);
     max = parseInt(max);
     amount = parseInt(amount);
     // duration = parseInt(duration);
 
-    if (isNaN(min) || isNaN(max) || isNaN(amount)) {
+    if (isMinContainStr || isMaxContainStr || isAmountContainStr) {
       setIsShow(true);
       setMessage("Harap memasukkan input berupa angka");
       return false;
