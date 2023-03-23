@@ -83,9 +83,9 @@ export default function Home() {
 
   const validateInput = (min, max, amount) => {
     const pattern = /[a-zA-Z]/i;
-    isMinContainStr = pattern.test(min);
-    isMaxContainStr = pattern.test(min);
-    isAmountContainStr = pattern.test(min);
+    const isMinContainStr = pattern.test(min);
+    const isMaxContainStr = pattern.test(max);
+    const isAmountContainStr = pattern.test(amount);
 
     min = parseInt(min);
     max = parseInt(max);
