@@ -154,7 +154,7 @@ export default function Home() {
           <div className="p-4 min-w-fit m-auto bg-red-50 rounded-lg flex justify-between space-x-8">
             <h2 className="text-red-500">{message}</h2>
             <div
-              className="font-medium text-red-800 hover:cursor-pointer hover:text-red-600 px-4 by-2 rounded-md border border-red-400"
+              className="font-medium text-red-800 hover:cursor-pointer hover:text-red-600 px-4 by-2 rounded-md border border-red-400 flex items-center"
               onClick={onMessageCloseBtnClicked}
             >
               X
@@ -172,7 +172,7 @@ export default function Home() {
                 type="text"
                 value={min}
                 onChange={(e) => setMin(e.target.value)}
-                className="text-center"
+                className="text-center border rounded-lg"
               />
             </div>
             <div className="space-x-4 items-center justify-center w-full">
@@ -181,16 +181,16 @@ export default function Home() {
                 type="text"
                 value={max}
                 onChange={(e) => setMax(e.target.value)}
-                className="text-center"
+                className="text-center border rounded-lg"
               />
             </div>
             <div className="space-x-4 w-full">
-              <h3 className="text-center">Jumlah</h3>
+              <h3 className="text-center ">Jumlah</h3>
               <input
                 type="text"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
-                className="text-center"
+                className="text-center border rounded-lg"
               />
             </div>
             {/* <div className="space-x-4 w-full">
