@@ -125,7 +125,6 @@ export default function Home() {
 
   if (randomNumbers.length > 0) {
     item = randomNumbers.map((rn, idx) => {
-      console.log(rn);
       return (
         <Item
           key={idx}
